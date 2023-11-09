@@ -1,0 +1,16 @@
+image:
+  repository: backend
+  pullPolicy: Always
+  tag: "latest"
+
+ingress:
+  enabled: true
+  hosts:
+    - host: chat.local
+      paths:
+        - path: /api
+          pathType: ImplementationSpecific
+
+service:
+  port: 8080
+  targetPort: 8080

@@ -1,0 +1,8 @@
+# registries config for k3s
+mirrors:
+  local.registry:
+    endpoint:
+      - "http://local.registry"
+    rewrite: {}
+configs: {}
+auths: {}
